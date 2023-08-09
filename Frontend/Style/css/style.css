@@ -25,6 +25,10 @@ body {
   .signup-form {
     padding: 20px;
   }
+
+  login-form {
+    display: none; /* Initially hide the login form */
+  }
   
   h2 {
     margin: 0 0 20px;
