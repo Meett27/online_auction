@@ -13,8 +13,9 @@ const port = 3000;
 // import the model you created
 const userInstance = require('./models/userModel');
 
-
-
+app.use('/',(req,res)=>{
+  res.sendFile(__dirname+'./Frontend/template/signup.html')
+})
 
 
 app.post('/login',(req, res) => { 
@@ -41,7 +42,7 @@ app.post('/login',(req, res) => {
 });
 
 //register endpoint
-app.post("/register",(req, res) => { 
+app.post("/signup",(req, res) => { 
     
     // console.log(req.body)
     const user = new userInstance({
