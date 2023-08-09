@@ -7,14 +7,14 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-const port = 3000;
+const port = 5000;
 
 
 // import the model you created
 const userInstance = require('./models/userModel');
 
 app.use('/',(req,res)=>{
-  res.sendFile(__dirname+'./Frontend/template/signup.html')
+  res.sendFile(__dirname+'/Frontend/templates/signup.html')
 })
 
 
