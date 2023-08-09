@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const registerLink = document.getElementById("registerLink");
-    const loginLink = document.getElementById("loginLink");
+    const registerLink = document.querySelector(".signup-form a");
+    const loginLink = document.querySelector(".login-form a");
     const loginForm = document.querySelector(".login-form");
     const signupForm = document.querySelector(".signup-form");
+  
+    signupForm.style.display = "block"; // Show signup form initially
   
     registerLink.addEventListener("click", function(event) {
       event.preventDefault();

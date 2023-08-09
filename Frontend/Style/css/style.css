@@ -11,9 +11,7 @@ body {
     height: 100vh;
   }
   
-  .forms {
-    display: flex;
-    justify-content: space-between;
+  .form {
     width: 400px;
     background-color: white;
     border-radius: 8px;
@@ -21,13 +19,9 @@ body {
     overflow: hidden;
   }
   
-  .login-form,
-  .signup-form {
+  .signup-form,
+  .login-form {
     padding: 20px;
-  }
-
-  login-form {
-    display: none; /* Initially hide the login form */
   }
   
   h2 {
