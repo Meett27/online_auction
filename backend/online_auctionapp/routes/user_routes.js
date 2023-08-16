@@ -3,11 +3,15 @@ const userController = require("../controllers/user_controller");
 
 const router = express.Router();
 
-router.get('/',userController.getAllUsers);
+// router.get('/',userController.getAllUsers);
 
+router.get('/register',userController.getSignUpPage);
 
-router.post('/',userController.createUser);
+router.post('/create',userController.createUser);
 
+router.get('/login',userController.getLoginPage);
+
+router.post('/Login',userController.postLogin);
 
 router.get('/:id',userController.getUserById)
 
